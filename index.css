@@ -108,3 +108,24 @@ header {
     grid-column: 2 / span 2;
     grid-row: 3 / span 3;
 }
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
+    footer div {
+        flex-direction: row;
+        padding: 4em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer div img {
+        order: 2;
+    }
+
+    footer p {
+        margin-top: 0;
+    }
