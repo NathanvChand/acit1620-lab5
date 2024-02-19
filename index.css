@@ -68,3 +68,18 @@ header {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr; gap: 2em;
 }
+
+#flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexbox h2 {
+    font-size: 6em;
+}
