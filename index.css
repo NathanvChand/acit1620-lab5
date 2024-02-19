@@ -48,9 +48,10 @@ html,
 body {
     margin: 0;
     height: 100%;
+    
 }
 
-
+@media (min-width: 800px) {
 header {
     display: grid;
     grid-template-rows: auto;
@@ -68,6 +69,7 @@ header {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr; gap: 2em;
 }
+}
 
 #flexbox {
     display: flex;
@@ -80,8 +82,10 @@ header {
     align-items: center;
 }
 
+@media (min-width: 800px) {
 #flexbox h2 {
     font-size: 6em;
+}
 }
 
 #grid {
@@ -90,6 +94,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (min-width: 800px) {
 #grid > * {
     padding: 1em;
 }
@@ -107,6 +112,7 @@ header {
 #grid div {
     grid-column: 2 / span 2;
     grid-row: 3 / span 3;
+}
 }
 
 footer div {
@@ -129,3 +135,4 @@ footer div {
     footer p {
         margin-top: 0;
     }
+}
